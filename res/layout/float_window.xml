@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id = "@+id/FloatWindow"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id = "@+id/FloatWindowImageButton"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:contentDescription="@string/FloatWindowImageButton"
+        android:background="@drawable/play"
+        />
+    
+    <TextView 
+        android:id = "@+id/FloatWindowCpuMem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        />
+    
+    <TextView 
+        android:id = "@+id/FloatWindowIOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        />
+    
+    <TextView 
+        android:id = "@+id/FloatWindowNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        />
+    
+    <TextView 
+        android:id = "@+id/FloatWindowBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        />
+
+</LinearLayout>
