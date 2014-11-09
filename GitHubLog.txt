@@ -1,0 +1,343 @@
+2014-11-09 18:17:49.6381|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+LibGit2Sharp.LibGit2SharpException: requested file is a directory
+   at LibGit2Sharp.Core.Ensure.HandleError(Int32 result)
+   at LibGit2Sharp.Core.Proxy.git_index_add_bypath(IndexSafeHandle index, FilePath path)
+   at LibGit2Sharp.Index.Stage(IEnumerable`1 paths, StageOptions stageOptions)
+   at GitHub.ExclusiveRepositoryConnection.<>c__DisplayClass1.<Commit>b__0()
+   at System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   at System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   at System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   at System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   at GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2014-11-09 18:05:02.3662|INFO|thread: 1|CommandLineHandler|Parsing command line arguments:http://github-windows.s3.amazonaws.com/GitHub.application
+2014-11-09 18:05:02.3812|INFO|thread: 1|AppInstanceCommunicator|Starting up as master instance of GitHub for Windows
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| #########################################
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| GitHub for Windows started. VERSION: 2.5.2.2
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| Build version: fe6395bd352b8fc51f0927d4cdb931a54e7d72e1
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***************************************
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***                                 ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***                                 ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***        Have a problem?          ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***    Email support@github.com     ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***      and include this file      ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***                                 ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***                                 ***
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| ***************************************
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| OS Version: Windows 7 Service Pack 1 6.1.7601.65536 amd64
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| CLR Version: 4.0.30319.17929
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| Current culture: zh-CN
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| Terminal Services session: no
+2014-11-09 18:05:02.5362|INFO|thread: 8|StartupLogging| Location: C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\GitHub.exe
+2014-11-09 18:05:02.6092|INFO|thread: 1|HardwareRenderingHelper|Making a WMI query to discover any video PNPID entries
+2014-11-09 18:05:02.6442|INFO|thread: 8|StartupLogging| ActivationUri: https://github-windows.s3.amazonaws.com/GitHub.application
+2014-11-09 18:05:02.6682|INFO|thread: 8|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2014-11-09 18:05:02.6682|INFO|thread: 8|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Google\Chrome\Application;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\JDK_SE1.7\bin;E:\JDK_SE1.7\jre\bin;
+2014-11-09 18:05:02.6682|INFO|thread: 8|StartupLogging| =====================================================
+2014-11-09 18:05:02.6682|INFO|thread: 8|StartupLogging|  DIAGNOSTICS                                        |
+2014-11-09 18:05:02.6682|INFO|thread: 8|StartupLogging| =====================================================
+2014-11-09 18:05:02.6682|INFO|thread: 8|StartupLogging| Git Extracted: 'False:
+2014-11-09 18:05:02.6682|ERROR|thread: 8|StartupLogging| MISSING PortableGit Dir: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2'
+2014-11-09 18:05:02.6792|ERROR|thread: 8|PortableGitManager|git.exe doesn't exist at 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe'
+2014-11-09 18:05:02.6792|ERROR|thread: 8|StartupLogging| MISSING Git Executable: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe'
+2014-11-09 18:05:02.6792|ERROR|thread: 8|StartupLogging| MISSING PATH!!: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd'
+2014-11-09 18:05:02.6792|ERROR|thread: 8|StartupLogging| MISSING PATH!!: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin'
+2014-11-09 18:05:02.6792|ERROR|thread: 8|StartupLogging| MISSING PATH!!: 'C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2'
+2014-11-09 18:05:02.6792|INFO|thread: 8|StartupLogging| ----------------------------------------------------
+2014-11-09 18:05:02.6792|INFO|thread: 8|StartupLogging| PATH: C:\Program Files (x86)\Google\Chrome\Application;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\JDK_SE1.7\bin;E:\JDK_SE1.7\jre\bin;
+2014-11-09 18:05:02.7612|INFO|thread: 8|StartupLogger|Proxy information: (None)
+2014-11-09 18:05:02.7612|INFO|thread: 8|StartupLogger|Couldn't fetch creds for proxy
+2014-11-09 18:05:02.7612|INFO|thread: 8|UrlProtocolInstaller|Registered UrlAppLauncher protocol: "C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\GitHub.exe" -u="%1"
+2014-11-09 18:05:02.7722|INFO|thread: 8|ShortcutManager|Shortcut 'C:\Users\Administrator\AppData\Local\GitHub\GitHub.appref-ms' missing. Assuming a first run.
+2014-11-09 18:05:02.7722|INFO|thread: 8|ShortcutManager|Copying the Start Menu shortcut 'C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc\GitHub.appref-ms' to 'C:\Users\Administrator\AppData\Local\GitHub\GitHub.appref-ms'
+2014-11-09 18:05:02.9122|INFO|thread: 8|ShortcutManager|Saving the Git Shell shortcut C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc\Git Shell.lnk
+2014-11-09 18:05:02.9272|INFO|thread: 8|ShortcutManager|Saving the Git Shell shortcut C:\Users\Administrator\Desktop\Git Shell.lnk
+2014-11-09 18:05:02.9492|INFO|thread: 1|HardwareRenderingHelper|Your video card appears to support hardware rendering. If this isn't the case and you see glitches
+2014-11-09 18:05:02.9492|INFO|thread: 1|HardwareRenderingHelper|set the GH_FORCE_SW_RENDERING environment variable to 1
+2014-11-09 18:05:03.2123|WARN|thread: 1|POCOObservableForProperty|ReactiveUI.ReactiveCommandSix`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:04.3543|INFO|thread: 1|App|Checking whether application is network deployed.
+2014-11-09 18:05:04.5583|INFO|thread: 1|ClickOnceAppIconHelper|Updating registry with our application icon 'C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\Images\App.ico'
+2014-11-09 18:05:04.7453|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2014-11-09 18:05:04.7453|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2014-11-09 18:05:04.7453|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2014-11-09 18:05:06.9975|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.DropRepositoryView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:07.3575|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.DashboardView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:07.5265|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.RepositoryCloneProgress is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:07.6275|INFO|thread: 1|GitExtractionVisualHelper|Attempting to extract Portable Git.
+2014-11-09 18:05:07.6615|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\7za.exe', Args: 'x -y "-oC:\Users\Administrator\AppData\Local\GitHub\cbvvgofi.jvy" "C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\PortableGit.7z"', Working Directory: 
+2014-11-09 18:05:07.9285|INFO|thread: 1|PortablePackageManager|Extracting PortableGit.7z is (so far) successful
+2014-11-09 18:05:07.9405|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\7za.exe', Args: 'x -y "-oC:\Users\Administrator\AppData\Local\GitHub\reljj14b.l5w" "C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\git-media-amd64.7z"', Working Directory: 
+2014-11-09 18:05:07.9685|INFO|thread: 1|PortablePackageManager|Extracting git-media-amd64.7z is (so far) successful
+2014-11-09 18:05:08.0635|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.ShellViewModel.
+2014-11-09 18:05:08.0635|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.DashboardViewModel.
+2014-11-09 18:05:08.2995|INFO|thread: 9|PortablePackageManager|GitHub.IO.ObservableProcess
+2014-11-09 18:05:09.0536|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.SourceList is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.1826|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.SourceListRepositoryItem is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.2526|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.RepositoryNotFound is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.2866|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PopupMenuView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.3716|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.AddOrCreatePopup is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.5006|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\7za.exe', Args: 'x -y "-oC:\Users\Administrator\AppData\Local\GitHub\kpyhs042.tij" "C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\gitignore.7z"', Working Directory: 
+2014-11-09 18:05:09.5246|INFO|thread: 1|PortablePackageManager|Extracting gitignore.7z is (so far) successful
+2014-11-09 18:05:09.5436|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.CreateRepositoryTab is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.7176|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.BrowseRepositoriesTab is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.7816|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.BrowseRepositoriesList is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.8146|INFO|thread:17|PortablePackageManager|GitHub.IO.ObservableProcess
+2014-11-09 18:05:09.8876|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.TwoFactorView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:09.9016|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.UndoFlashView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:11.1307|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2014-11-09 18:05:11.1307|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2014-11-09 18:05:11.1307|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2014-11-09 18:05:11.1847|WARN|thread: 1|POCOObservableForProperty|GitHub.Validation.ReactivePropertyValidationResult is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:11.6357|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.WelcomeWizardViewModel.
+2014-11-09 18:05:11.9657|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.Login is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:05:14.5859|INFO|thread:15|SoftwareUpdateViewModel|Checking for new version
+2014-11-09 18:05:35.3611|INFO|thread: 1|RepositoryHost|Log in from cache for login 'DCPUZ' to host 'https://api.github.com/' SUCCEEDED
+2014-11-09 18:05:35.4241|INFO|thread:26|ConfigurationFactory|Didn't find '~/.gitconfig', creating one.
+2014-11-09 18:05:35.7021|INFO|thread:26|GitConfig|Setting default global git configuration for user.name b/c it was blank. value = DCPUZ
+2014-11-09 18:05:36.1801|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2014-11-09 18:05:36.1801|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2014-11-09 18:05:36.1801|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2014-11-09 18:05:44.6326|INFO|thread:27|GitConfig|Saving global git configuration for user.name and user.email
+2014-11-09 18:05:44.6326|INFO|thread:27|GitConfig|Changing global git configuration for user.email. value = dengc0825@gmail.com
+2014-11-09 18:05:46.8587|INFO|thread: 8|PortablePackageManager|GitHub.IO.ObservableProcess
+2014-11-09 18:05:46.8697|INFO|thread: 1|GitHubShellSetupHelper|Wrote GitHubShell setup script here 'C:\Users\Administrator\AppData\Local\GitHub\shell.ps1'
+2014-11-09 18:05:46.8697|INFO|thread:21|ApplicationShellInitializer|Running post login tasks. ~/.gitconfig is set up with user.name = 'DCPUZ' and user.email = 'dengc0825@gmail.com'
+2014-11-09 18:05:46.8977|INFO|thread: 7|SSHProcessManager|Starting ssh-agent.exe
+2014-11-09 18:05:47.7608|INFO|thread:29|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:05:47.7608|INFO|thread:29|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:05:47.7818|INFO|thread:29|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\ssh-add.exe', Args: '"C:\Users\Administrator\.ssh\github_rsa"', Working Directory: C:\Users\Administrator\AppData\Local\Temp\
+2014-11-09 18:05:47.9758|ERROR|thread: 7|RemoteSSHKeyChain|Failed to set up SSH Agent
+System.AggregateException: One or more errors occurred. ---> GitHub.IO.ProcessException: C:\Users\Administrator\.ssh\github_rsa: No such file or directory
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at GitHub.PortableGit.Helpers.SSHKeyHelper.<>c__DisplayClassf.<StartSshAgent>b__c()
+   at System.Reactive.Linq.QueryLanguage.<>c__DisplayClass13b.<>c__DisplayClass13d.<ToAsync>b__13a()
+---> (Inner Exception #0) GitHub.IO.ProcessException: C:\Users\Administrator\.ssh\github_rsa: No such file or directory<---
+
+2014-11-09 18:05:48.0638|INFO|thread: 7|SSHKeyHelper|Couldn't find SSH key pair, generating new ones
+2014-11-09 18:05:48.0768|INFO|thread: 7|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:05:48.0768|INFO|thread: 7|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:05:48.0768|INFO|thread: 7|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\ssh-keygen.exe', Args: '-t rsa -N "" -f "C:\Users\Administrator\.ssh\github_rsa"', Working Directory: C:\Users\Administrator\AppData\Local\Temp\
+2014-11-09 18:05:49.5069|INFO|thread:24|ApiClient|About to add SSH Key: GitHub for Windows - USER-20140823TA - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCps1RLze1Vk3TQAvvkmWB1e1IkhsQ6pQAhfx8XJUofeJolNSnyy965fHO4+ZDXd7FPVoDaz++3h08vtcnenr77HA1g2Jx/mr6H4zIaUrfR/BW0O0p/zWGTHCaDcdmaeG1Cedq9T3CMUENN2Ir4TcwLDcI2nEtzskcOMHxrsR3Iq9CKzWV16E+N/0qqMjeFT9qLK9rC2Rj30X3qW26UFhMgClOZIEOd8N7sScFmS8TgOY8sQlAcWgPcnao3ECfSyB/Da9OhUYSUsCAIMbxFzhybusAqHrAzncqtiM5Vc5cxoX9/16q3AQca9NHflD8maUgux9u5h6GhNHiFqXCy8KQZ Administrator@USER-20140823TA
+
+2014-11-09 18:05:57.9463|INFO|thread: 1|ReactiveScreen|Deactivating GitHub.ViewModels.WelcomeWizardViewModel.
+2014-11-09 18:05:57.9463|INFO|thread: 1|ReactiveScreen|Closed GitHub.ViewModels.WelcomeWizardViewModel.
+2014-11-09 18:07:56.7999|INFO|thread: 1|CreateNewRepositoryViewModel|Creating and initializing new local repository here 'D:\WORKSPACE\Git\AndroidMonitorTools'
+2014-11-09 18:07:57.0089|INFO|thread:34|CreateNewRepositoryViewModel|Created repository sucessfully: 'D:\WORKSPACE\Git\AndroidMonitorTools'
+2014-11-09 18:07:57.0279|INFO|thread:32|AsyncReaderWriterLock|Acquiring exclusive lock for operation 1: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:57.0279|INFO|thread:35|AsyncReaderWriterLock|Acquired exclusive lock for operation 1: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:57.0399|INFO|thread:35|ExclusiveRepositoryConnection|Creating Commit
+2014-11-09 18:07:57.1079|INFO|thread:35|ExclusiveRepositoryConnection|Creating new commit with 2 file(s). :circus_tent: Added .gitattributes & .gitignore files
+2014-11-09 18:07:57.2149|INFO|thread:35|AsyncReaderWriterLock|Released exclusive lock for operation 1: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:57.3339|WARN|thread: 1|POCOObservableForProperty|ReactiveUI.ReactiveCommandSix`1[[System.Reactive.Unit, System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]] is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:57.5030|WARN|thread: 1|LogHost|SuppressChangeNotifications was called (perhaps via AddRange), yet you do not
+2014-11-09 18:07:57.5030|WARN|thread: 1|LogHost|have a subscription to ShouldReset. This probably isn't what you want, as ItemsAdded
+2014-11-09 18:07:57.5030|WARN|thread: 1|LogHost|and friends will appear to 'miss' items
+2014-11-09 18:07:57.7980|WARN|thread: 1|POCOObservableForProperty|ReactiveUI.ReactiveCommandSix`1[[GitHub.Models.ICommitModel, GitHub, Version=2.5.2.2, Culture=neutral, PublicKeyToken=null]] is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:57.8770|INFO|thread:31|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:07:57.9020|INFO|thread:31|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:07:58.5160|INFO|thread:32|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:07:58.5300|INFO|thread:32|AsyncReaderWriterLock|Acquiring concurrent lock for operation 2: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:58.5300|INFO|thread:32|AsyncReaderWriterLock|Acquired concurrent lock for operation 2: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:58.5590|INFO|thread:32|AsyncReaderWriterLock|Released concurrent lock for operation 2: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:58.5730|INFO|thread:34|AsyncReaderWriterLock|Acquiring concurrent lock for operation 3: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:58.5730|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent lock for operation 3: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:58.5730|INFO|thread:32|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:07:58.5820|INFO|thread:35|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:07:58.5820|INFO|thread:35|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:07:58.5820|INFO|thread:35|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:07:58.5820|INFO|thread:32|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:07:58.8590|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.RepositoryView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:58.8940|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PublishToHostButton is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:58.8940|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.AheadBehindIndicator is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.0770|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.CommitForm is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.1191|INFO|thread:34|AsyncReaderWriterLock|Released concurrent lock for operation 3: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:07:59.1351|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.NewCommitView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.1971|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PublishToHostPopup is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.2421|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.PublishToHostTab is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.3211|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.GitHubLogin is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.3771|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.GitHubEnterpriseLogin is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.4121|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.BranchesPopup is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.4881|INFO|thread:32|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:07:59.4881|INFO|thread:32|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:07:59.5511|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.Controls.CommitListItem is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:07:59.6201|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:07:59.6321|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:07:59.6321|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:07:59.6321|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status b407ccc8f53eb135ba56c91f80996101733cbc1f ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:07:59.6531|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:07:59.6531|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:07:59.6531|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat b407ccc8f53eb135ba56c91f80996101733cbc1f ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:07:59.6891|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:07:59.9491|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.CommitFileDiffView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:11:04.8092|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:11:04.8092|INFO|thread:27|AsyncReaderWriterLock|Acquiring concurrent lock for operation 4: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:11:04.8092|INFO|thread:28|AsyncReaderWriterLock|Acquired concurrent lock for operation 4: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:11:04.8252|INFO|thread:27|AsyncReaderWriterLock|Released concurrent lock for operation 4: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:11:04.8252|INFO|thread:27|AsyncReaderWriterLock|Acquiring concurrent lock for operation 5: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:11:04.8252|INFO|thread:27|AsyncReaderWriterLock|Acquired concurrent lock for operation 5: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:11:04.8312|INFO|thread:26|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:11:04.8312|INFO|thread:27|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:11:04.8312|INFO|thread:27|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:11:04.8312|INFO|thread:27|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:11:04.8312|INFO|thread:26|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:11:04.8482|INFO|thread:24|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:11:04.8482|INFO|thread:24|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:11:04.9202|INFO|thread:24|AsyncReaderWriterLock|Released concurrent lock for operation 5: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:11:04.9772|WARN|thread: 1|POCOObservableForProperty|GitHub.Views.WorkingDirectoryFileDiffView is a POCO type and won't send change notifications, WhenAny will only return a single value!
+2014-11-09 18:11:04.9912|INFO|thread: 1|RepositoryViewModel|Created Shadow Backup for Repo: D:\WORKSPACE\Git\AndroidMonitorTools => 30375a06efe8afc99e20a7934a1e9a820d090f68 in 70ms
+2014-11-09 18:11:05.0312|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:11:05.0312|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:12:17.5473|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:12:17.5473|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent lock for operation 6: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:17.5473|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent lock for operation 6: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:17.5973|INFO|thread:16|AsyncReaderWriterLock|Released concurrent lock for operation 6: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:17.6093|INFO|thread: 9|AsyncReaderWriterLock|Acquiring concurrent lock for operation 7: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:17.6093|INFO|thread: 9|AsyncReaderWriterLock|Acquired concurrent lock for operation 7: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:17.6093|INFO|thread: 9|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:12:17.6093|INFO|thread: 9|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:12:17.6093|INFO|thread: 9|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:12:17.6093|INFO|thread:16|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:12:17.6093|INFO|thread:16|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:12:17.6573|INFO|thread:17|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:12:17.6573|INFO|thread:17|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:12:17.7273|INFO|thread:15|AsyncReaderWriterLock|Released concurrent lock for operation 7: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:17.7683|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:12:49.0581|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:12:49.0581|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent lock for operation 8: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:49.0581|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent lock for operation 8: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:49.0841|INFO|thread:16|AsyncReaderWriterLock|Released concurrent lock for operation 8: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:49.0911|INFO|thread:15|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:12:49.0911|INFO|thread:15|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:12:49.0911|INFO|thread:24|AsyncReaderWriterLock|Acquiring concurrent lock for operation 9: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:49.0911|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent lock for operation 9: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:49.1051|INFO|thread:16|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:12:49.1051|INFO|thread:24|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:12:49.1051|INFO|thread:24|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:12:49.1051|INFO|thread:24|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:12:49.1051|INFO|thread:16|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:12:49.2401|INFO|thread:24|AsyncReaderWriterLock|Released concurrent lock for operation 9: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:12:49.2531|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:13:53.4318|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+System.InvalidOperationException: Sequence contains no elements.
+   at System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   at GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2014-11-09 18:13:57.6420|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\7za.exe', Args: 'x -y "-oC:\Users\Administrator\AppData\Local\GitHub\uezk42e3.zfi" "C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\posh-git.7z"', Working Directory: 
+2014-11-09 18:13:57.6690|INFO|thread: 1|PortablePackageManager|Extracting posh-git.7z is (so far) successful
+2014-11-09 18:13:57.7410|INFO|thread:17|PortablePackageManager|GitHub.IO.ObservableProcess
+2014-11-09 18:13:57.7520|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:13:57.7520|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4\NativeBinaries/x86;C:\Program Files (x86)\Google\Chrome\Application;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\JDK_SE1.7\bin;E:\JDK_SE1.7\jre\bin;
+2014-11-09 18:13:57.7520|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe', Args: '-NoExit -ExecutionPolicy Unrestricted -File "C:\Users\Administrator\AppData\Local\GitHub\PoshGit_3874a02de8ce2b7d4908a8c0cb302294358b972c\profile.example.ps1"', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:15:48.1644|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:15:48.1644|INFO|thread:37|AsyncReaderWriterLock|Acquiring concurrent lock for operation 10: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:15:48.1644|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent lock for operation 10: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:15:48.1814|INFO|thread:37|AsyncReaderWriterLock|Released concurrent lock for operation 10: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:15:48.1814|INFO|thread:37|AsyncReaderWriterLock|Acquiring concurrent lock for operation 11: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:15:48.1814|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent lock for operation 11: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:15:48.1814|INFO|thread:37|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:15:48.1814|INFO|thread:37|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:15:48.1904|INFO|thread:37|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:15:48.2094|INFO|thread:38|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:15:48.2094|INFO|thread:38|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:15:48.2094|INFO|thread:38|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:15:48.2244|INFO|thread:38|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:15:48.2834|INFO|thread:40|AsyncReaderWriterLock|Released concurrent lock for operation 11: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:15:48.3564|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:15:48.3564|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:16:05.2473|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:16:05.2473|INFO|thread:38|AsyncReaderWriterLock|Acquiring concurrent lock for operation 12: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:05.2473|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent lock for operation 12: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:05.2653|INFO|thread:38|AsyncReaderWriterLock|Released concurrent lock for operation 12: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:05.2653|INFO|thread:37|AsyncReaderWriterLock|Acquiring concurrent lock for operation 13: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:05.2653|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent lock for operation 13: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:05.2653|INFO|thread:37|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:16:05.2773|INFO|thread:37|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:16:05.2773|INFO|thread:38|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:16:05.2773|INFO|thread:38|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:16:05.2773|INFO|thread:38|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:16:05.2773|INFO|thread:40|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:16:05.2773|INFO|thread:40|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:16:05.3533|INFO|thread:37|AsyncReaderWriterLock|Released concurrent lock for operation 13: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:05.4283|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:16:08.3085|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+System.InvalidOperationException: Sequence contains no elements.
+   at System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   at GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2014-11-09 18:16:37.8822|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:16:37.8822|INFO|thread:39|AsyncReaderWriterLock|Acquiring concurrent lock for operation 14: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:37.8822|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent lock for operation 14: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:37.9002|INFO|thread:38|AsyncReaderWriterLock|Released concurrent lock for operation 14: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:37.9112|INFO|thread:39|AsyncReaderWriterLock|Acquiring concurrent lock for operation 15: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:37.9112|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent lock for operation 15: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:37.9112|INFO|thread:37|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:16:37.9112|INFO|thread:37|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:16:37.9112|INFO|thread:38|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:16:37.9112|INFO|thread:38|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:16:37.9112|INFO|thread:38|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:16:37.9112|INFO|thread:39|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:16:37.9242|INFO|thread:39|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:16:37.9872|INFO|thread:40|AsyncReaderWriterLock|Released concurrent lock for operation 15: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:16:37.9872|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:17:05.5387|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:17:05.5387|INFO|thread:42|AsyncReaderWriterLock|Acquiring concurrent lock for operation 16: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:05.5387|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent lock for operation 16: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:05.5577|INFO|thread:42|AsyncReaderWriterLock|Released concurrent lock for operation 16: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:05.5577|INFO|thread:45|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:17:05.5577|INFO|thread:43|AsyncReaderWriterLock|Acquiring concurrent lock for operation 17: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:05.5577|INFO|thread:43|AsyncReaderWriterLock|Acquired concurrent lock for operation 17: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:05.5697|INFO|thread:43|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:17:05.5697|INFO|thread:43|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:17:05.5697|INFO|thread:45|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:17:05.5697|INFO|thread:43|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:17:05.5697|INFO|thread:45|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:17:05.5697|INFO|thread:45|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:17:05.6667|INFO|thread:44|AsyncReaderWriterLock|Released concurrent lock for operation 17: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:05.7487|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:17:07.7788|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+System.InvalidOperationException: Sequence contains no elements.
+   at System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   at GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2014-11-09 18:17:21.5516|INFO|thread:43|AsyncReaderWriterLock|Acquiring exclusive lock for operation 18: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:21.5516|INFO|thread:43|AsyncReaderWriterLock|Acquired exclusive lock for operation 18: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:21.5516|INFO|thread:43|ExclusiveRepositoryConnection|Creating Commit
+2014-11-09 18:17:21.5866|INFO|thread:43|AsyncReaderWriterLock|Released exclusive lock for operation 18: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:21.5886|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+LibGit2Sharp.LibGit2SharpException: requested file is a directory
+   at LibGit2Sharp.Core.Ensure.HandleError(Int32 result)
+   at LibGit2Sharp.Core.Proxy.git_index_add_bypath(IndexSafeHandle index, FilePath path)
+   at LibGit2Sharp.Index.Stage(IEnumerable`1 paths, StageOptions stageOptions)
+   at GitHub.ExclusiveRepositoryConnection.<>c__DisplayClass1.<Commit>b__0()
+   at System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   at System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Reactive.PlatformServices.ExceptionServicesImpl.Rethrow(Exception exception)
+   at System.Reactive.ExceptionHelpers.ThrowIfNotNull(Exception exception)
+   at System.Reactive.Subjects.AsyncSubject`1.GetResult()
+   at GitHub.Helpers.GitClient.<>c__DisplayClass27.<<CreateCommit>b__1e>d__30.MoveNext()
+2014-11-09 18:17:42.8008|INFO|thread: 1|RepositoryViewModel|Refreshing all information for repo
+2014-11-09 18:17:42.8008|INFO|thread:43|AsyncReaderWriterLock|Acquiring concurrent lock for operation 19: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:42.8008|INFO|thread:43|AsyncReaderWriterLock|Acquired concurrent lock for operation 19: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:42.8248|INFO|thread:43|AsyncReaderWriterLock|Released concurrent lock for operation 19: 'LoadHeadForRepo' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:42.8998|INFO|thread:43|AsyncReaderWriterLock|Acquiring concurrent lock for operation 20: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:42.8998|INFO|thread:43|AsyncReaderWriterLock|Acquired concurrent lock for operation 20: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:42.8998|INFO|thread:43|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:17:42.8998|INFO|thread:43|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:17:42.8998|INFO|thread:43|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools\
+2014-11-09 18:17:42.8998|INFO|thread:45|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:17:42.9148|INFO|thread:45|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:17:42.9408|INFO|thread:45|GitClient|Loading commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:17:42.9448|INFO|thread:45|RepositoryConnection|Loaded '1' commits for repo: D:\WORKSPACE\Git\AndroidMonitorTools\.
+2014-11-09 18:17:42.9968|INFO|thread:27|AsyncReaderWriterLock|Released concurrent lock for operation 20: 'LoadFilesInWorkingDirectory' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:43.0448|INFO|thread: 1|SyncButtonViewModel|Refresh ahead/behind counts skipped because branch isn't published: refs/heads/master
+2014-11-09 18:17:46.6880|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:17:46.6880|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:17:46.6880|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status b407ccc8f53eb135ba56c91f80996101733cbc1f ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:17:46.7160|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 5508:/tmp/ssh-p6Kx2i2vn5H2/agent.5604
+2014-11-09 18:17:46.7160|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\cmd;C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin;C:\Users\Administrator\AppData\Local\Apps\2.0\5N0RTT5R.MW4\Q2VV0VNV.69C\gith..tion_317444273a93ac29_0002.0005_f2bbfed8cb3268d4;C:\Users\Administrator\AppData\Local\GitHub\git-media-amd64_0.2.2;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\System32
+2014-11-09 18:17:46.7160|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Administrator\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat b407ccc8f53eb135ba56c91f80996101733cbc1f ', Working Directory: D:\WORKSPACE\Git\AndroidMonitorTools
+2014-11-09 18:17:49.6191|INFO|thread: 8|AsyncReaderWriterLock|Acquiring exclusive lock for operation 21: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:49.6191|INFO|thread: 8|AsyncReaderWriterLock|Acquired exclusive lock for operation 21: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
+2014-11-09 18:17:49.6221|INFO|thread: 8|ExclusiveRepositoryConnection|Creating Commit
+2014-11-09 18:17:49.6221|INFO|thread: 8|AsyncReaderWriterLock|Released exclusive lock for operation 21: 'CreateCommit' on resource D:\WORKSPACE\Git\AndroidMonitorTools\.git
